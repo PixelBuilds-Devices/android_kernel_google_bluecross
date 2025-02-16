@@ -1,0 +1,28 @@
+/* Copyright (c) 2017-2018, The Linux Foundation. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+/dts-v1/;
+/plugin/;
+
+#include "../qcom/sdm845-v2.1.dtsi"
+#include "sdm845-c1-common.dtsi"
+#include "sdm845-patherm.dtsi"
+#include "sdm845-usbctherm.dtsi"
+#include "sdm845-c1-usb-v3.dtsi"
+#include "sdm845-c1-audio-cal.dtsi"
+
+/ {
+	model = "Google Inc. MSM sdm845 C1 DVT1.1";
+	compatible = "google,b1c1-sdm845", "qcom,sdm845";
+        qcom,msm-id = <321 0x20001>;
+	qcom,board-id = <0x00011505 0>;
+};
